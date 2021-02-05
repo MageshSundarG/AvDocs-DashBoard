@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Theme included stylesheets -->
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link href="https://cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+
+  <!-- Core build with no theme, formatting, non-essential modules -->
+  <link href="https://cdn.quilljs.com/1.3.6/quill.core.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.0.0\dist\css\bootstrap.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+  <!-- Google Font CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+  <title>airmeX Dashboard</title>
+</head>
+
+<body>
+   
+  <include src="href="bootstrap-4.0.0\dist\css\bootstrap.css"></include>
+  <!-- Navbar with logo and user -->
+  <section>
+
+    <nav class="navbar navbar-expand-xl navbar-light navbar-top">
+      <span class="navbar-brand mb-0 h1" style="color: white;">MRO <span class="edm-bg">SCM</span></span>
+      <i class="fas fa-ellipsis-v"></i>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="nav mx-auto justify-content-center row">
+          <li class="nav-item">
+            <a class="nav-link nav-name white-text" href="#" id="nav-name0">Inventory Operations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-name white-text" href="#" id="nav-name1">Warehouse Operations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-name white-text" href="#" id="nav-name2">Procurement Control</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-name white-text" href="#" id="nav-name3">Repair Control</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-exclamation-triangle"></i>
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-ellipsis-v"></i>
+          <h6 class="username">Username</h6>
+          <i class="fas fa-user-tie" style="margin: 0px 5px;"></i>
+        </form>
+
+      </div>
+    </nav>
+  </section>
+
+  <!-- Dropdowns -->
+  <section class="">
+    <ul class="nav dropdown-nav">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Parts Manager</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Manage parts</a>
+          <a class="dropdown-item" href="#">View parts</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Warehouse Manager</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Manage parts</a>
+          <a class="dropdown-item" href="#">View parts</a>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+
+  <!-- Navigation tabs -->
+  <section class="">
+    <ul class="nav nav-tabs nav-tabs-header" id="inventoryOperationsTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#manage-parts" role="tab" aria-controls="home" aria-selected="true">Manage Parts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#view-parts" role="tab" aria-controls="profile" aria-selected="false">View Parts</a>
+      </li>
+      <li>
+
+      </li>
+    </ul>
+  </section>
+
+  <!-- Navigation tabs content -->
+  <section>
+    <div class="tab-content" id="inventoryOperationsTabContent">
+      <div class="tab-pane fade show active" id="manage-parts" role="tabpanel" aria-labelledby="home-tab">
+      </div>
+      <div class="tab-pane fade" id="profile" role="view-parts" aria-labelledby="profile-tab">
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Data Tracker -->
+  <section class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light primary-data-tracker bg-color">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <span class="nav-link">Transaction #<span class="sr-only">(current)</span></span>
+          </li>
+          <button type="button" class="btn btn-outline-success status-button">STATUS</button>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button type="button" class="btn btn-secondary">Modify</button>
+          <button type="button" class="btn btn-secondary">Search</button>
+          <button type="button" class="btn btn-secondary">Save</button>
+          <button type="button" class="btn btn-secondary">Submit</button>
+        </form>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-- Transaction controller -->
+  <section>
+
+    <div class="document-search-controller bg">
+      <div class="sidenav left-side">
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle search-button" type="button" data-toggle="dropdown">Search
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu text-center">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="transaction-controller">
+      <div id="editor-container">
+      </div>
+    </div>
+    <div class="document-controller">
+      <ul class="list-group">
+        <li class="list-group-item text-left"><i class="fas fa-heading"></i><a href="#">Header</a></li>
+        <li class="list-group-item text-left"><i class="far fa-file-alt"></i><a href="#">Article</a></li>
+        <li class="list-group-item text-left"><i class="fas fa-bold"></i><a href="#">Body</a></li>
+        <li class="list-group-item text-left"><i class="fas fa-sort-down"></i><a href="#">Footer</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- External Javascript file -->
+  <script src="app.js"></script>
+
+  <!-- Main Quill library -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <!-- Initialize Quill editor -->
+  <script>
+    var quill = new Quill('#editor-container', {
+      modules: {
+        toolbar: [
+          [{
+            header: [1, 2, false]
+          }],
+          ['bold', 'italic', 'underline'],
+          ['image', 'code-block']
+        ]
+      },
+      placeholder: 'Compose an epic...',
+      theme: 'snow' // or 'bubble'
+
+    });
+    quill.format('color', 'black');
+  </script>
+
+  <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+  <script src="https://cdn.quilljs.com/1.3.6/quill.core.js"></script>
+
+
+  <!-- Optional JavaScript BootStrap-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
